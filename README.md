@@ -145,3 +145,26 @@ A CI pipeline automates building, testing, and deploying services, integrating w
 3. **Access the dashboard:**
 
 Open your browser and navigate to http://localhost:3000.
+# Screenshots
+<table>
+  <tr>
+    <th>Network Log list</th>
+    <th>Request details</th>
+    <th>Response details</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/sunilsharma08/XNLogger/master/XNLoggerExample/ExampleAppScreenshots/LogListScreen.png" alt="Log lists" width="300" height="468"/></td>
+    <td><img src="https://raw.githubusercontent.com/sunilsharma08/XNLogger/master/XNLoggerExample/ExampleAppScreenshots/LogDetailsRequestScreen.png" alt="Request details" width="300" height="468"/></td>
+    <td><img src="https://raw.githubusercontent.com/sunilsharma08/XNLogger/master/XNLoggerExample/ExampleAppScreenshots/LogDetailsResponseScreen.png" alt="Response details" width="300" height="468"/></td>
+  </tr>
+  <tr>
+    <th>Share</th>
+    <th>Multimedia preview</th>
+    <th>Mini view mode(PIP)</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/sunilsharma08/XNLogger/master/XNLoggerExample/ExampleAppScreenshots/Share.png" alt="Share logs" width="300" height="468"/></td>
+    <td><img src="https://raw.githubusercontent.com/sunilsharma08/XNLogger/master/XNLoggerExample/ExampleAppScreenshots/MultimediaContent.png" alt="Multimedia preview" width="300" height="468"/></td>
+    <td><img src="https://raw.githubusercontent.com/sunilsharma08/XNLogger/master/XNLoggerExample/ExampleAppScreenshots/MiniView.png" alt="Mini view mode" width="300" height="468"/></td>
+  </tr>
+</table>
