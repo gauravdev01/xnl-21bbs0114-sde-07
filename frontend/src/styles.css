@@ -1,0 +1,132 @@
+/* src/styles.css */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Flexbox layout */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  /* Header styles */
+  .header {
+    font-size: 2rem;
+    color: #0073e6;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .chart-container {
+    width: 90%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .pie-chart-container {
+    width: 70%;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  button {
+    padding: 12px 25px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Neumorphism */
+  .neumorphism {
+    background: #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7);
+  }
+  
+  @media (max-width: 768px) {
+    .chart-container {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  /* Dark Mode Styles */
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: #fff; /* Set the text color to white for all text */
+  }
+  
+  body.dark-mode h1, body.dark-mode h2 {
+    color: #fff; /* Set header text to white */
+  }
+  
+  body.dark-mode .chart-container {
+    background-color: #444;
+  }
+  
+  body.dark-mode button {
+    background-color: #333;
+    color: #fff; /* Ensure button text is also white */
+  }
+  
+  body.dark-mode .neumorphism {
+    background: #3b3b3b;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  body.dark-mode p, body.dark-mode label, body.dark-mode .error-rate {
+    color: #fff; /* Ensure any paragraph text, labels, and error rate text are white */
+  }
+  
+  /* Dark Mode Chart Labels */
+  body.dark-mode .chart-container .chartjs-render-monitor {
+    color: #fff; /* Ensure all chart labels are white */
+  }
+  
+  body.dark-mode .chart-container .chartjs-tooltip {
+    color: #fff; /* Tooltip text should also be white */
+  }
+  
+  body.dark-mode .pie-chart-container h2 {
+    color: #fff; /* Apply white color to success vs errors title */
+  }
+  
+  body.dark-mode .pie-chart-container .chartjs-tooltip {
+    color: #fff; /* Tooltip text on the pie chart */
+  }
+  

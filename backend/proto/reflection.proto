@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package grpc.reflection.v1alpha;
+
+service ServerReflection {
+  rpc ServerReflectionInfo (stream ServerReflectionRequest) returns (stream ServerReflectionResponse);
+}
+
+message ServerReflectionRequest {
+  oneof message_request {
+    string list_services = 1;
+  }
+}
+
+message ServerReflectionResponse {
+  oneof message_response {
+    ListServiceResponse list_services_response = 1;
+  }
+}
+
+message ListServiceResponse {
+  repeated ServiceResponse service = 1;
+}
+
+message ServiceResponse {
+  string name = 1;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package monitoring;
+
+service MonitoringService {
+  rpc GetMetrics (MetricsRequest) returns (MetricsResponse);
+}
+
+message MetricsRequest {
+  string request_id = 1;
+}
+
+message MetricsResponse {
+  string status = 1;
+  int64 response_time_ms = 2;
+  string timestamp = 3;
+}
