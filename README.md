@@ -168,3 +168,10 @@ Open your browser and navigate to http://localhost:3000.
     <td><img src="https://raw.githubusercontent.com/sunilsharma08/XNLogger/master/XNLoggerExample/ExampleAppScreenshots/MiniView.png" alt="Mini view mode" width="300" height="468"/></td>
   </tr>
 </table>
+
+![transaction_duration](https://github.com/user-attachments/assets/f373b293-5f3f-4acd-8f23-8cabeb710777)
+![active_requests](https://github.com/user-attachments/assets/887dbc7f-569c-49f9-a62d-d89b4cff197b)
+![total_count](https://github.com/user-attachments/assets/9c751d4c-dd11-4bdc-af1b-9548b4657adb)
+
+
+
