@@ -1,0 +1,25 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend  # Path to your backend folder
+    ports:
+      - "50051:50051"  # Exposing backend API port
+    networks:
+      - my_network
+    environment:
+      - NODE_ENV=production  # Set any environment variables if necessary
+  
+  frontend:
+    build:
+      context: ./frontend  # Path to your frontend folder
+    ports:
+      - "3000:3000"  # Exposing frontend web server port
+    networks:
+      - my_network
+    depends_on:
+      - backend  # Ensuring the backend service is started before frontend
+
+networks:
+  my_network:
+    driver: bridge  # Using bridge network for inter-container communication
